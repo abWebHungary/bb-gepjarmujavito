@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+	<!--Meta-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="B&B Gépjárműjavító Kft.">
+	<meta name="copyright" content="B&B Gépjárműjavító Kft.">
+	<meta name="country" content="Hungary">
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="autószerelés,szervíz,autómentés">
+
+	<!--Title-->
+	<title>B&B Gépjárműjavító Kft.</title>
+
+	<!--Icon-->
+	<link rel="icon" href="/images/Logo.png" type="image/icon type">
+
+	<!--Google Font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<!--css-->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/index.css">
+
+</head>
+
+<body>
+
+	<nav id="nav">
+
+		<div class="logo-box">
+			<img class="logo" src="/webpimages/Logo.webp" alt="B&B Gépjárműjavító Kft. Logo">
+        </div>
+
+        <div class="menu-box">
+            <a href="index.html">Főoldal</a>
+            <a href="index.html">Autószerelés</a>
+            <a href="automentes.html">Karosszéria Javítás</a>
+            <a href="automentes.html">Autómentés</a>
+            <div class="indicator" id="active-page"></div>
+					
+        </div>
+
+        <div class="social-box">
+            <a href="https://www.facebook.com/BB-G%C3%A9pj%C3%A1rm%C5%B1jav%C3%ADt%C3%B3-%C3%A9s-karbantart%C3%B3-Kft-102021878025381"
+                target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+        </div>
+
+        <div class="mobile-nav">
+
+            <img class="logo" src="/webpimages/Logo.webp" alt="B&B Gépjárműjavító Kft. Logo">
+
+            <div class="nav_endflex" onclick="menuToggle()">
+                <i class="fa-solid fa-gear menu-icon" id="menuIcon"></i>
+            </div>
+
+            <div class="menu-toggle" id="dropdown">
+                <a href="index.html">Autószerelés</a>
+                <a href="index.html">Főoldal</a>
+                <a href="automentes.html">Autómentés</a>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <header id="header">
+
+        <span class="slide-button" onclick="slideShow(1)">&#10094;</span>
+        <div class="slideShow" id="hero"></div>
+        <div class="header-text">
+            <h1>B&B Gépjárműjavító Kft.</h1>
+            <h2>Autómentés
+                <span class="orange-divider"> / </span>
+                Karosszéria Javítás
+                <span class="orange-divider"> / </span>
+                Autószerelés
+            </h2>
+        </div>
+        <span class="slide-button" onclick="slideShow(-1)">&#10095;</span>
+
+    </header>
+
+    <div class="info-bar">
+
+        <div class="info-box">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <div class="info-text">
+                <span class="info-text">Hétfő-Péntek</span>
+                <span class="info-text">8:00-16:30</span>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <a class="callbutton-box" href="tel:06705626340" alt="Phone number">Hívjon most</a>
+        </div>
+
+        <div class="info-box">
+            <div class="info-text">
+                <span class="info-text">Magyarország</span>
+                <span class="info-text">Teljes Területén</span>
+            </div>
+            <i class="fa-solid fa-map-location-dot"></i>
+        </div>
+
+    </div>
+
+    <main id="main">
+
+        <div class="main-content">
+          
+            <div class="about-us ">             
+                <div class="main-page-content fade-in">
+                        
+                        <i class="fa-solid fa-user-group main-img"></i>
+                        <p class="main-content-label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat iste modi adipisci
+                        </p>
+                </div>
+
+
+                <div class="main-page-content fade-in">
+                     <i class="fa-solid fa-clock main-img"></i>
+                        <p class="main-content-label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat iste modi adipisci
+                        </p>
+
+                </div>
+              <div class="main-page-content fade-in">
+                     <i class="fa-solid fa-coins main-img "></i>
+                        <p class="main-content-label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat iste modi adipisci
+                        </p>
+
+                </div>
+              <div class="main-page-content fade-in">
+                    <i class="fa-solid fa-phone main-img"></i>
+                        <p class="main-content-label">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fugiat iste modi adipisci
+                        </p>
+
+                </div>              
+            </div>
+            
+
+            <div class="review-section">
+                <h2>Ezeket Irták Rólunk</h2>
+                <div class="review-box">
+                    <p class="apostrophe">&#8220;</p>
+                    <p id="reviews"></p>
+                    <p class="apostrophe">&#8222;</p>
+                </div>
+
+                <div class="button-box">
+                    <span class="review-buttons" onclick="showReviews(1)">
+                        <div class="review-button" id="rb1"></div>
+                    </span>
+                    <span class="review-buttons" onclick="showReviews(2)">
+                        <div class="review-button" id="rb2"></div>
+                    </span>
+                    <span class="review-buttons" onclick="showReviews(3)">
+                        <div class="review-button" id="rb3"></div>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="prices">
+
+        </div> 
+
+    </main>
+
+    <footer id="footer">
+
+        <div class="footer-sbs">
+
+            <div class="footer-info">
+                    <h3>Címünk</h3>
+                    <p><i class="fa-solid fa-warehouse"></i>  József Attila u. 10 Sárbogárd 7019</p>
+                    <p><i class="fa-solid fa-clock"></i>  Hétfő-Péntek 8:00-16:30</p>
+                    <p><i class="fa-solid fa-calendar-xmark"></i>  Szombat,Vasránap: Zárva</p>
+            </div>
+
+            <div class="google-maps">
+                    <div class="gmap_canvas">
+                        <iframe width="100" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            title="gmaps"
+                            src="https://maps.google.com/maps?q=7019%20S%C3%A1rbog%C3%A1rd,%20J%C3%B3zsef%20Attila%20utca%2010.%20a.%20%C3%A9p.&t=&z=9&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                    </div>
+            </div>
+
+            <div class="footer-info">
+                    <h3>Elérhetőségeink</h3>
+                    <p><i class="fa-solid fa-phone"></i>  +36201234567</p>
+                    <p><i class="fa-solid fa-envelope"></i>  info@bbauto.hu</p>
+                    <a href="https://www.facebook.com/BB-G%C3%A9pj%C3%A1rm%C5%B1jav%C3%ADt%C3%B3-%C3%A9s-karbantart%C3%B3-Kft-102021878025381"
+                target="_blank"><i class="fa-brands fa-facebook-f"></i>  Facebook</a>
+
+            </div>
+
+        </div>
+            
+        <div class="copyright-box">
+        <p class="copyright">
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear())</script> B&B Gépjárműjavító Kft.
+        </p>
+        <a class="madeby" href="##">ABweb</a>
+        </div>
+
+    </footer>
+
+</body>
+
+<!--JS-->
+<script src="/scripts.js"></script>
+<script src="https://kit.fontawesome.com/2113a48e0d.js" crossorigin="anonymous"></script>
+
+
+</html>
